@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- app strings -->
+
+    <string name="app_lang">Hebrew</string>
+    <string name="app_name">שיינזון</string>
+
+    <!-- menu pages -->
+
+    <string name="title_about">אודות</string>
+    <string name="title_products">מוצרים</string>
+    <string name="title_brands">מותגים</string>
+    <string name="title_projects">פרוייקטים</string>
+    <string name="title_contact_us">צור קשר</string>
+
+    <!-- title Pages-->
+
+    <string name="title_one_about">הניסיון שעושה את ההבדל</string>
+    <string name="text_about">חברת “שינזון” פעילה משנת 1930. החברה עוסקת ביבוא ובשיווק של מגוון רחב של אביזרים לתאי שירותים ומבואות לשלב הגמרים בבנייה. החברה פעילה בשלושה סגמנטים עיקריים: השוק הרפואי, שוק בתי המלון, מבני ציבור-מסחר ומשרדים. ב 2006 הוקמה חברת “שינזון שיווק 2006” מתוך מגמה להרחיב את פעילותה, להמשיך לצמוח, ולהוביל את השוק בו היא פועלת. המשותף לכל תחומי העיסוק והמוצרים הוא, שחברת שינזון מייצגת חברות בינלאומיות, המובילות בתחומן, תוך הקפדה יתרה על איכות המוצר, איכות השירות ואמינות.</string>
+
+    <!-- Default Strings project item -->
+
+    <string name="project_item_title">אין כותרת</string>
+    <string name="project_item_description">אין תיאור</string>
+
+    <!-- contact us -->
+    <!--titles-->
+    <string name="name_title_contact_us_details">שם</string>
+    <string name="email_title_contact_us_details">דואר אלקטרוני</string>
+    <string name="phone_title_contact_us_details">מספר טלפון</string>
+    <string name="fax_title_contact_us_details">מספר פקס</string>
+    <string name="location_title_contact_us_details">כתובת</string>
+
+    <!--data -->
+
+    <string name="name_title_contact_us_data">שינזון בע״מ</string>
+    <string name="email_title_contact_us_data">info@sheinson.com</string>
+    <string name="phone_title_contact_us_data">09-8940661</string>
+    <string name="fax_title_contact_us_data">09-8940665</string>
+    <string name="location_title_contact_us_data">ת.ד. 275 , צורן 42823</string>
+
+
+    <!--Form -->
+
+
+    <string name="name_form_contact_us_details">שם</string>
+    <string name="email_form_contact_us_details">דואר אלקטרוני</string>
+    <string name="phone_form_contact_us_details">מספר טלפון</string>
+    <string name="fax_form_contact_us_details">מספר פקס</string>
+    <string name="message_form_contact_us_details">הודעה</string>
+    <string name="btn_send_data">שלח</string>
+
+
+    <!-- send mail-->
+
+    <string name="new_lead">נכנס ליד חדש</string>
+
+</resources>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.contact.ContactUsFragment">
+
+    <TextView
+        android:id="@+id/text_contact_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout_details"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout_details">
+
+        <TextView
+            android:id="@+id/details_name_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name_title_contact_us_data">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/details_email_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email_title_contact_us_data">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/details_phone_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_title_contact_us_data">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/details_massage_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location_title_contact_us_data">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/details_name_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name_title_contact_us_details"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/details_email_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email_title_contact_us_details"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/details_phone_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_title_contact_us_details"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/details_massage_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location_title_contact_us_details"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/contact_us_divider"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/divider_contact_us"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_data"></ImageView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_form"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact_us_divider">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_form_horizontal_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            tools:layout_editor_absoluteX="91dp"
+            tools:layout_editor_absoluteY="247dp"
+
+            >
+
+            <EditText
+                android:id="@+id/form_full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="8"
+                android:inputType="textPersonName"
+                android:hint="@string/name_form_contact_us_details"
+                tools:layout_editor_absoluteX="60dp"
+                tools:layout_editor_absoluteY="289dp" />
+
+            <EditText
+                android:id="@+id/form_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email_form_contact_us_details" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_form_vertical_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:layout_editor_absoluteX="91dp"
+            tools:layout_editor_absoluteY="247dp"
+
+            >
+
+            <EditText
+                android:id="@+id/form_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:ems="10"
+                android:inputType="phone"
+                android:hint="@string/phone_form_contact_us_details" />
+
+            <EditText
+                android:id="@+id/form_massage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:lines="7"
+                android:hint="@string/message_form_contact_us_details" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_send_data"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="75dp"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:text="@string/btn_send_data"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

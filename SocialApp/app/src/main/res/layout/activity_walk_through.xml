@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WalkThroughActivity">
+
+
+    <TextView
+        android:id="@+id/textview_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Connect with Designers"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_images" />
+
+    <TextView
+        android:id="@+id/button_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/white"
+        android:text="Skip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_walkthrough"
+        android:layout_width="wrap_content"
+        android:layout_height="6dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.435">
+
+        <RadioButton
+            android:id="@+id/btn1_walk"
+            android:layout_width="45dp"
+            android:layout_height="6dp"
+            android:layout_marginEnd="16dp"
+            android:button="@null"
+
+
+            android:checked="true"
+            android:drawableRight="@drawable/radio_button_selector"
+            android:selectAllOnFocus="false"
+
+
+            app:layout_constraintEnd_toStartOf="@+id/btn2_walk"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:layout_editor_absoluteY="542dp" />
+
+        <RadioButton
+            android:id="@+id/btn2_walk"
+            android:layout_width="45dp"
+            android:layout_height="6dp"
+            android:layout_marginEnd="16dp"
+            android:button="@null"
+
+            android:checked="false"
+            android:drawableRight="@drawable/radio_button_selector"
+            android:selectAllOnFocus="false"
+
+
+            app:layout_constraintEnd_toStartOf="@+id/btn3_walk"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:layout_editor_absoluteY="542dp" />
+
+        <RadioButton
+            android:id="@+id/btn3_walk"
+            android:layout_width="45dp"
+            android:layout_height="6dp"
+            android:button="@null"
+
+            android:checked="false"
+            android:drawableRight="@drawable/radio_button_selector"
+            android:selectAllOnFocus="false"
+
+
+            tools:ignore="TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="267dp"
+            tools:layout_editor_absoluteY="542dp" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll_images"
+        android:layout_width="300dp"
+        android:layout_height="334dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/textview_first"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_walkthrough_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="116dp"
+            app:layout_constraintBottom_toTopOf="@+id/textview_first"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.477"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/walkthrough"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_walkthrough_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="116dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/textview_first"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.477"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/walkthrough" />
+
+        <ImageView
+            android:id="@+id/iv_walkthrough_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="116dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/textview_first"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.477"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/walkthrough" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="18"
+        android:gravity="center"
+        android:text="Kindness And Motivation Tips Challenge Groups To Make A Difference"
+        app:layout_constraintBottom_toTopOf="@+id/radio_group_walkthrough"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_first" />
+
+    <TextView
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="120dp"
+        android:background="@color/white"
+        android:text="@string/next"
+        android:textColor="#0277BD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

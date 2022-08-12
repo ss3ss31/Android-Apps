@@ -1,0 +1,30 @@
+<resources>
+    /* app name*/
+    <string name="app_name">Terrazo</string>
+
+    /* app credential*/
+    <string name="APP_ID">CLUNOS</string>
+    <string name="CLIENT_KEY">345678</string>
+    <string name="SERVER_URL">http://localhost:1337/parse/</string>/*1337 /parse*/
+
+    /* parse user*/
+    <string name="USER">admin</string>
+    <string name="PASSWORD">admin</string>
+
+    /* app user interface string*/
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+
+
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<resources>
+    <string-array name="brands_names_array">
+        <item>Geesa</item>
+        <item>Pawling</item>
+        <item>Schafer</item>
+        <item>Bobrick</item>
+        <item>Mediclinics</item>
+        <item>Pressalit</item>
+        <item>Pellet</item>
+        <item>Hailo</item>
+        <item>Guldmann</item>
+        <item>Digilock</item>
+        <item>Sheinson</item>
+    </string-array>
+
+    <string-array name="brands_descriptions_array">
+        <item>A Dutch company that has been active since 1885.</item>
+        <item>An American company that has been active since 1945.</item>
+        <item>A German company that has been active since 1928.</item>
+        <item>An American company that has been active since 1900.</item>
+        <item>A company</item>
+        <item>A privately owned Danish company, operating since 1954.</item>
+        <item>A German company that has been active since 1928.</item>
+        <item>A German company that has been active since 1947.</item>
+        <item>A Danish company that has been active since 1980.</item>
+        <item>A company</item>
+        <item>Shinzon has been active since 1930.</item>
+    </string-array>
+
+    <integer-array name="brands_images_array">
+        <item>@drawable/brands_pic_geesa</item>
+        <item>@drawable/brands_pic_pawling</item>
+        <item>@drawable/brands_pic_schafer</item>
+        <item>@drawable/brands_pic_bobrick</item>
+        <item>@drawable/brands_pic_mediclinics</item>
+        <item>@drawable/brands_pic_pressalit</item>
+        <item>@drawable/brands_pic_pellet</item>
+        <item>@drawable/brands_pic_hailo</item>
+        <item>@drawable/brands_pic_guldmann</item>
+        <item>@drawable/brands_pic_digilock</item>
+        <item>@drawable/brands_pic_sheinson</item>
+    </integer-array>
+
+    <integer-array name="brands_logos_array">
+        <item>@drawable/brands_logo_geesa</item>
+        <item>@drawable/brands_logo_pawling</item>
+        <item>@drawable/brands_logo_schafer</item>
+        <item>@drawable/brands_logo_bobrick</item>
+        <item>@drawable/brands_logo_mediclinics</item>
+        <item>@drawable/brands_logo_pressalit</item>
+        <item>@drawable/brands_logo_pellet</item>
+        <item>@drawable/brands_logo_hailo</item>
+        <item>@drawable/brands_logo_guldmann</item>
+        <item>@drawable/brands_logo_digilock</item>
+        <item>@drawable/brands_logo_sheinson</item>
+    </integer-array>
+</resources>
