@@ -1,0 +1,57 @@
+<resources>
+    <!-- app strings -->
+    <string name="app_lang">English</string>
+    <string name="app_name">Shinzon</string>
+
+    <!-- menu pages -->
+
+    <string name="title_about">About</string>
+    <string name="title_products">Products</string>
+    <string name="title_brands">Brands</string>
+    <string name="title_projects">Projects</string>
+    <string name="title_contact_us">Contact Us</string>
+
+
+
+    <!-- title Pages-->
+
+    <string name="title_one_about">Experience Made the Diffrance</string>
+    <string name="text_about">Shinzon has been active since 1930.\n\n The company imports and markets a wide range of accessories for toilets and entrances to the final stage in construction.\n\n The company is active in three main segments: the medical market, the hotel market, public-commercial buildings and offices.\n\n In 2006, Shinzon Marketing 2006 was established with the aim of expanding its operations, continuing to grow, and leading the market in which it operates.\n\n Common to all areas of business and products is that Shinzon represents international companies, which are leaders in their field, while paying particular attention to product quality, service quality and reliability.\n\n</string>
+
+    <!-- Default Strings project item -->
+
+    <string name="project_item_title">No Title</string>
+    <string name="project_item_description">No Description</string>
+
+    <!-- contact us -->
+
+    <!--titles-->
+
+    <string name="name_title_contact_us_details">Name</string>
+    <string name="email_title_contact_us_details">E-mail</string>
+    <string name="phone_title_contact_us_details">Phone Number</string>
+    <string name="fax_title_contact_us_details">Fax Number</string>
+    <string name="location_title_contact_us_details">Location</string>
+
+    <!--data -->
+
+    <string name="name_title_contact_us_data">Shinzon LTD.</string>
+    <string name="email_title_contact_us_data">info@sheinson.com</string>
+    <string name="phone_title_contact_us_data">09-8940661</string>
+    <string name="fax_title_contact_us_data">09-8940665</string>
+    <string name="location_title_contact_us_data">P.O. 275 , Zoran 42823</string>
+
+    <!--Form -->
+
+    <string name="name_form_contact_us_details">Name</string>
+    <string name="email_form_contact_us_details">E-mail</string>
+    <string name="phone_form_contact_us_details">Phone Number</string>
+    <string name="fax_form_contact_us_details">Fax Number</string>
+    <string name="message_form_contact_us_details">Message</string>
+    <string name="btn_send_data">Send</string>
+
+    <!-- send mail-->
+    <string name="new_lead">Income New Lead</string>
+
+
+</resources>

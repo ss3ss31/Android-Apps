@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<resources>
+    <string-array name="project_names_array">
+        <item>Raphael Hospital</item>
+        <item>Hamanor</item>
+        <item>Toita Palmahim</item>
+        <item>Azrieli - rounded tower</item>
+        <item>Hahoshlim</item>
+        <item>The Western Wall</item>
+        <item>Amot vitrum Gym</item>
+        <item>Gym made in the country</item>
+        <item>Atenti</item>
+        <item>Symantec offices</item>
+    </string-array>
+
+    <string-array name="project_descriptions_array">
+        <item>Tel-Aviv</item>
+        <item>Holon</item>
+        <item>Rishon Le Zion</item>
+        <item>Tel-Aviv</item>
+        <item>Hertzelia</item>
+        <item>Jerusalem</item>
+        <item>Tel-Aviv</item>
+        <item>Tel-Aviv</item>
+        <item>Tel-Aviv</item>
+        <item>Tel-Aviv</item>
+    </string-array>
+
+    <integer-array name="project_images_array">
+        <item>@drawable/project_raphael_hospitals</item>
+        <item>@drawable/hamanor</item>
+        <item>@drawable/schafer_7</item>
+        <item>@drawable/schafer_5</item>
+        <item>@drawable/schafer_3</item>
+        <item>@drawable/schafer_1</item>
+        <item>@drawable/vitrum_1</item>
+        <item>@drawable/sheinson_1_sh_lock</item>
+        <item>@drawable/atenti_4</item>
+        <item>@drawable/sheinson_3_symantec</item>
+    </integer-array>
+
+</resources>

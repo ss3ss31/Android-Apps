@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:background="#80FFFFFF"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+    <Toolbar
+        android:id="@+id/tb_mytoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="5dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="33dp"
+            android:layout_height="30dp"
+
+            android:layout_margin="4dp"
+            android:layout_marginRight="4dp"
+
+            android:padding="0dp"
+            app:cardCornerRadius="250dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_circle"
+                android:layout_width="53dp"
+                android:layout_height="50dp"
+
+
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="0dp"
+
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/myprofileimg"
+
+                app:shapeAppearance="@style/Circle"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="10dp"
+            android:src="@android:drawable/ic_search_category_default"
+            />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/multi_auto_ccomplete_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:visibility="visible" />
+
+    </Toolbar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/circle_parent_recyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb_mytoolbar" />
+
+
+    <ListView
+        android:id="@+id/rounded_square_parent_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:padding="4dp"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circle_parent_recyclerView" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

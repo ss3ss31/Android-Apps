@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetStartedActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_gs_oval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="284dp"
+        android:layout_marginBottom="205dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_gs_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/oval_splash" />
+
+    <TextView
+        android:id="@+id/tv_gs_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="290dp"
+        android:layout_marginBottom="26dp"
+        android:text="Get Started"
+        android:textAlignment="textStart"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_gs_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_gs_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="292dp"
+        android:ems="18"
+        android:text="Sign up for new account, enter your email and get started."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gs_title" />
+
+    <EditText
+        android:id="@+id/et_ea_gs_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="18dp"
+        android:ems="14"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_gs_form_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gs_desc"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btn_gs_form_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginBottom="1dp"
+        android:ems="18"
+        android:text="Next"
+        app:layout_constraintBottom_toTopOf="@+id/tv__have_acoount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_ea_gs_email" />
+
+    <TextView
+        android:id="@+id/tv__have_acoount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="21dp"
+        android:text="Already have an account?"
+        app:layout_constraintBottom_toTopOf="@+id/tv_gs_log_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_gs_form_next" />
+
+    <TextView
+        android:id="@+id/tv_gs_log_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="187dp"
+        android:layout_marginBottom="53dp"
+        android:text="Log In"
+        android:textColor="@color/light_blue_600"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv__have_acoount" />
+</androidx.constraintlayout.widget.ConstraintLayout>

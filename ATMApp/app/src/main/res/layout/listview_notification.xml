@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageViewNotification"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_margin="5dp"
+        app:srcCompat="@drawable/notification_icon" />
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+
+        >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_Title_Notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="T"
+                android:textColor="@color/colorItemTitle"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textStyle="bold"
+                android:fontFamily="@string/app_font"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_Description_Notification"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorItemDesc"
+                android:layout_margin="5dp"
+                android:text="D"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textStyle="bold"
+                android:fontFamily="@string/app_font"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/image_Status"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="25dp"
+        app:srcCompat="@drawable/notification_new"
+        />
+
+</LinearLayout>

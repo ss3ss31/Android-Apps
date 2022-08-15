@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.bank.atm_app.ui.home.HomeFragment">
+
+    <!-- <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+-->
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioGroup
+            android:id="@+id/rg_currency"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@android:color/transparent"
+            android:checkedButton="@id/RadioButton_C"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.344"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.904">
+
+            <RadioButton
+                android:id="@+id/RadioButton_L"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_corner_view"
+                android:button="@null"
+                android:checked="false"
+                android:fontFamily="Geometry Soft Pro-Bold N.otf"
+                android:onClick="onRadioButtonClicked"
+                android:padding="10dp"
+                android:text="€ • EUR "
+                android:textColor="#1F3F66"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <!-- tools:layout_editor_absoluteX="80dp"
+                tools:layout_editor_absoluteY="35dp" -->
+
+            <RadioButton
+                android:id="@+id/RadioButton_C"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_corner_view"
+                android:button="@null"
+                android:checked="true"
+                android:fontFamily="Geometry Soft Pro-Bold N.otf"
+                android:onClick="onRadioButtonClicked"
+                android:padding="10dp"
+                android:text="$ • USD"
+                android:textColor="#1F3F66"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <!--tools:layout_editor_absoluteX="160dp"
+                tools:layout_editor_absoluteY="35dp" -->
+
+            <RadioButton
+                android:id="@+id/RadioButton_R"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_corner_view"
+                android:button="@null"
+                android:checked="false"
+                android:fontFamily="Geometry Soft Pro-Bold N.otf"
+                android:onClick="onRadioButtonClicked"
+                android:padding="10dp"
+                android:text="€ • EUR "
+                android:textColor="#1F3F66"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <!-- tools:layout_editor_absoluteX="240dp"
+                tools:layout_editor_absoluteY="35dp" -->
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="376dp"
+        android:background="@drawable/graph"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_wrapBehaviorInParent="horizontal_only"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons_icon"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="@id/linearLayout1"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_wrapBehaviorInParent="horizontal_only"
+        tools:ignore="ImageContrastCheck" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        app:layout_constraintBottom_toTopOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout1"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="Geometry Soft Pro-Bold N.otf"
+            android:text="$7,567.98"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            tools:text="$7,567.98" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="Geometry Soft Pro-Bold N.otf"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="Geometry Soft Pro-Bold N.otf"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="Geometry Soft Pro-Bold N.otf"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        <!-- tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="356dp" -->
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="Geometry Soft Pro-Bold N.otf"
+            android:text="Today" />
+
+
+      <!--  <Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:contentInsetStart="0dp"
+            android:minHeight="?attr/actionBarSize"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark">
+-->
+            <ListView
+                android:id="@+id/lv_home1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="0dp">
+
+            </ListView>
+        <!-- </Toolbar>-->
+
+
+         <TextView
+             android:id="@+id/textView6"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:fontFamily="Geometry Soft Pro-Bold N.otf"
+             android:text="Yesterday" />
+
+       <!--  <Toolbar
+             android:id="@+id/toolbar2"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="?attr/colorPrimary"
+             android:contentInsetStart="0dp"
+             android:minHeight="?attr/actionBarSize"
+             android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+             android:theme="@style/ThemeOverlay.AppCompat.Dark">
+-->
+             <ListView
+                 android:id="@+id/lv_home2"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="0dp"
+                 android:divider="@null"
+                 android:dividerHeight="0dp"
+                 android:minHeight="200dp"
+
+                 />
+
+         <!--</Toolbar>-->
+
+     </LinearLayout>
+
+ </androidx.constraintlayout.widget.ConstraintLayout>

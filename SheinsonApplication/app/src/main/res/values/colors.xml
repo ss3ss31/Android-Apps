@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="orange_200_sheinson">#f54524</color>
+    <color name="orange_500_sheinson">#f54425</color>
+    <color name="oyster_bay_sheinson">#d6e5e8</color>
+    <color name="gray_300_sheinson">#d6e5e8</color>
+    <color name="gery_500_sheinson">#909a9a</color>
+    <color name="opacity_sheinson">#444444</color>
+    <color name="small_titles_sheinson">#00ACC4</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+</resources>

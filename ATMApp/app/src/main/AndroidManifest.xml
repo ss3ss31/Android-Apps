@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bank.atm_app">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_atm"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_atm"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ATMApp">
+        <activity
+            android:name="com.bank.atm_app.AddToListActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.bank.atm_app.SplashScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.ATMApp.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bank.atm_app.ui.login.LoginActivity"
+            android:exported="true"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name="com.bank.atm_app.ExchangeActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.bank.atm_app.TransferCompleteActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.bank.atm_app.SelectRecipientActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.bank.atm_app.DetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.bank.atm_app.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+    </application>
+
+</manifest>

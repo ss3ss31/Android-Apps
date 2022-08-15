@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_x2"
+        android:title="@string/title_home"
+        android:fontFamily="@string/app_font"
+        /> <!-- home -->
+
+    <item
+        android:id="@+id/navigation_expenses"
+        android:icon="@drawable/stats_x2"
+        android:title="@string/title_expenses"
+        android:fontFamily="@string/app_font"
+        /> <!-- dashboard -->
+
+    <item
+        android:id="@+id/navigation_add"
+        android:icon="@drawable/bar_add"
+        android:title="@string/title_add"
+        android:fontFamily="@string/app_font"
+        /> <!-- add -->
+
+    <item
+        android:id="@+id/navigation_notification"
+        android:icon="@drawable/notification_x2"
+        android:title="@string/title_notifications"
+        android:fontFamily="@string/app_font"
+        /> <!-- notifications -->
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/man_x2"
+        android:title="@string/title_account"
+        android:fontFamily="@string/app_font"
+        /> <!-- account -->
+
+</menu>

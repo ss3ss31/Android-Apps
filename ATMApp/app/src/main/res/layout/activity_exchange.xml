@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bank.atm_app.ExchangeActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="35dp"
+        android:layout_marginBottom="-25dp"
+        >
+
+        <Spinner
+            android:id="@+id/spinner_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/app_font"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_price_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="textEnd"
+            android:fontFamily="@string/app_font"
+            />
+
+        <TextView
+            android:id="@+id/tv_current_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current:"
+            android:fontFamily="@string/app_font"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_new_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New:"
+            android:fontFamily="@string/app_font"
+            ></TextView>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationZ="15dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:translationZ="15dp"
+            app:srcCompat="@drawable/rectangle" >
+
+        </ImageView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-110dp"
+            android:layout_marginTop="15dp"
+            android:translationZ="16dp">
+
+            <TextView
+                android:id="@+id/currency_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$"
+                android:fontFamily="@string/app_font"
+                >
+                >
+                <!--  $1 = €0.86 -->
+            </TextView>
+            <TextView
+                android:id="@+id/currency_number_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:translationZ="16dp"
+                android:fontFamily="@string/app_font"
+                />
+            <TextView
+                android:id="@+id/currency_equals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="="
+                android:translationZ="16dp"
+                android:fontFamily="@string/app_font"
+                />
+            <TextView
+                android:id="@+id/currency_sign_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="€"
+                android:translationZ="16dp"
+                android:fontFamily="@string/app_font"
+                />
+            <TextView
+                android:id="@+id/currency_number_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.86"
+                android:translationZ="16dp"
+                android:fontFamily="@string/app_font"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="150dp"
+            android:layout_height="match_parent"></View>
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:translationZ="15dp"
+            app:srcCompat="@drawable/base_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:layout_marginTop="-45dp"
+        android:background="#b3d3f9"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="45dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        android:translationZ="14dp"
+
+        >
+
+        <Spinner
+            android:id="@+id/spinner_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@string/app_font"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_price_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="textEnd"
+            android:fontFamily="@string/app_font"
+            />
+
+        <TextView
+            android:id="@+id/tv_current_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current:"
+            android:fontFamily="@string/app_font"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_new_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New:"
+            android:fontFamily="@string/app_font"
+            ></TextView>
+
+        <Button
+            android:id="@+id/bt_ex_now"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:background="@drawable/bg_bt_ex"
+            android:text="Exchange"
+            android:fontFamily="@string/app_font"
+            >
+
+        </Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeee"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:translationZ="14dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_ex_num1"
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+
+                android:layout_weight="0"
+                android:padding="0dp"
+                android:text="1"
+                android:textColor="#030303"
+                android:textSize="18dp"
+                android:fontFamily="@string/app_font"
+                />
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/icon_bg_ac"
+
+
+            <Button
+                android:id="@+id/bt_ex_num2"
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+
+                android:layout_weight="0"
+                android:padding="0dp"
+                android:text="2"
+                android:textColor="#030303"
+                android:textSize="18dp"
+                app:strokeColor="#009688"
+                android:fontFamily="@string/app_font"
+                />
+
+            <Button
+                android:id="@+id/bt_ex_num3"
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+
+                android:layout_weight="0"
+                android:padding="0dp"
+                android:text="3"
+                android:textColor="#030303"
+                android:textSize="18dp"
+                app:strokeColor="#009688"
+                android:fontFamily="@string/app_font"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_ex_num4"
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+
+                android:layout_weight="0"
+                android:padding="0dp"
+                android:text="4"
+                android:textColor="#030303"
+                android:textSize="18dp"
+                app:strokeColor="#009688"
+                android:fontFamily="@string/app_font"
+                />
+
+            <Button
+                android:id="@+id/bt_ex_num5"
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+
+                android:layout_weight="0"
+                android:padding="0dp"
+                android:text="5"
+                android:textColor="#030303"
+                android:textSize="18dp"
+                app:strokeColor="#009688"
+                android:fontFamily="@string/app_font"
+                />
+
+            <Button
+                android:id="@+id/bt_ex_num6"
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+
+                android:layout_weight="0"
+                android:padding="0dp"
+                android:text="6"
+                android:textColor="#030303"
+                android:textSize="18dp"
+                app:strokeColor="#009688"
+                android:fontFamily="@string/app_font"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_ex_num7"
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+
+                android:layout_weight="0"
+                android:padding="0dp"
+                android:text="7"
+                android:textColor="#030303"
+                android:textSize="18dp"
+                app:strokeColor="#009688"
+                android:fontFamily="@string/app_font"
+                />
+
+            <Button
+                android:id="@+id/bt_ex_num8"
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+
+                android:layout_weight="0"
+                android:padding="0dp"
+                android:text="8"
+                android:textColor="#030303"
+                android:textSize="18dp"
+                app:strokeColor="#009688"
+                android:fontFamily="@string/app_font"
+                />
+
+            <Button
+                android:id="@+id/bt_ex_num9"
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+                android:layout_weight="0"
+                android:padding="0dp"
+                android:text="9"
+                android:textColor="#030303"
+                android:textSize="18dp"
+                app:strokeColor="#009688"
+                android:fontFamily="@string/app_font"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_ex_nothing"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+                android:layout_weight="0"
+                android:padding="0dp"
+                android:textSize="18dp"
+                android:visibility="invisible"
+                android:fontFamily="@string/app_font"
+                />
+
+            <Button
+                android:id="@+id/bt_ex_num0"
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+
+                android:layout_weight="0"
+                android:padding="0dp"
+                android:text="0"
+                android:textColor="#030303"
+                android:textSize="18dp"
+                app:strokeColor="#009688"
+                android:fontFamily="@string/app_font"
+                />
+
+            <ImageButton
+                android:id="@+id/bt_ex_num_del"
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+                android:layout_weight="0"
+                android:padding="0dp"
+                android:src="@drawable/icon_delete_culc"
+                android:textColor="#030303"
+                android:textSize="18dp"
+                app:strokeColor="#009688"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
