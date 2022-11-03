@@ -5,7 +5,7 @@
 ### Description
    
    Motivation that build for: Business Family
-   Why I build this project? We thought to give my skills chance
+   Why I build this project? I thought to give my skills chance
    Problem that solved:
    - Present products for potencial clients.
    - Comunicate by email.
