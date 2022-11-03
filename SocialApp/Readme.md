@@ -52,6 +52,9 @@ Scrollings
 Like buttons
 Preview Images
 Inside Image
+Search Button
+Titles
+Sub Titles
 
 ## Tests
 
